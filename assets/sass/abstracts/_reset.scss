@@ -30,7 +30,7 @@ ol, ul {
 	list-style: none;
 }
 a{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 blockquote, q {
 	quotes: none;
@@ -45,5 +45,5 @@ table {
 	border-spacing: 0;
 }
 * {
-    font-family: "Jost", sans-serif !important;
+    font-family: "Jost", sans-serif ;
 }
