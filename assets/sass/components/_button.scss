@@ -1,0 +1,36 @@
+.hero-btn {
+    border: 1px solid $t-green;
+    background-color: $t-green;
+}
+
+.btn-1 {
+    padding: 17px 24px;
+    color: $t-light;
+    text-transform: capitalize;
+    width: max-content;
+    font-weight: 600;
+    transition: all 0.4s;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+.red-btn {
+    border: 1px solid $t-red;
+    background-color: $t-red;
+
+    &:hover {
+        color: $t-red;
+    }
+}
+
+.red-border-btn {
+    border: 1px solid $t-red;
+    color: $t-red;
+
+    &:hover {
+        background-color: $t-red;
+        color: $t-light;
+    }
+}

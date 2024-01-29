@@ -1,0 +1,86 @@
+#home {
+    @include flex-center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color: $t-light;
+    background-image: url('/assets/images/h1_hero1.jpg.webp');
+
+    .hero-caption {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+        }
+
+        P {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        a{
+            width: max-content;
+        }
+    }
+}
+// Start Section About Area 1
+#about-area1{
+    height: max-content;
+    .about-content{
+       @include flex-center;
+       gap: 20px;
+       span{
+        color: $t-green;
+       }
+       h2{
+        color: #263B5C;
+        font-size: 42px;
+        line-height: 54px;
+        font-weight: 500;
+       }
+    //    p{
+    //     font-size: 16px;
+    //     line-height: 22px;
+    //     color: #777777;
+    //    }
+    }
+}
+// Start Section Cards
+#cards{
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #F4F2F1;
+        color: #263B5C;
+        h2{
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        p{
+           font-size: 14px;
+        }
+        .col{
+            p{
+                color: $t-green;
+                font-weight: 600;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+        .btn-1{
+            padding: 13px 40px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+   #home .hero-caption {
+        h1{
+            font-size: 48px;
+        }
+    }
+  }

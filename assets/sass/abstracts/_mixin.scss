@@ -1,0 +1,46 @@
+.container-X{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.container-Y{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.bg-section{
+    background-color: #FCF2EB;
+}
+.w-35{
+    width: 35%;
+}
+.w-80{
+    width: 80%;
+}
+section{
+    overflow: hidden;
+}
+.section-text{
+    font-size: 16px;
+    line-height: 22px;
+    color: #777777;
+   }
+@mixin flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width: 992px) {
+   .w-80{
+         width: 100%;
+     }
+     .w-35{
+        width: 100%;
+    }
+     .container-X{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .container-Y{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+   }
