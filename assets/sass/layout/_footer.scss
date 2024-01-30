@@ -1,9 +1,13 @@
 footer{
     background-color: #263B5C;
     color: $t-light;
-    a{
+    img{
+        width: 150px;
+    }
+    p,a{
         color: $t-light;
         font-weight: 500;
+        font-size: 12px;
     }
     ul{
         padding-left: 0;
@@ -11,8 +15,20 @@ footer{
             margin-bottom: 10px;
         }
     }
-    h4{
+    h6{
         margin-bottom: 24px;
+    }
+    .footer-title{
+        font-size: 14px;
+        margin-bottom: 1.2rem;
+    }
+    .footer-copy-right span{
+        color: $t-green;
+    }
+    .btn-1{
+        font-size: 12px;
+        padding: 12px 20px;
+        margin-bottom: 20px;
     }
     .footer-social{
         display: flex;
@@ -20,9 +36,10 @@ footer{
         align-items: center;
         a{
             display: inline-block;
-            width: 54px;
-            height: 54px;
-            line-height: 54px;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 1rem;
             text-align: center;
             font-family: $Rubik;
         }
@@ -39,19 +56,4 @@ footer{
             background-color: #FF0000;
         }
     }
-    // button{
-    //     background-color: blue;
-    //     color: #fff;
-    //     text-transform: uppercase;
-    //     padding: 8px 30px;
-    //     font-weight: 600;
-    //     border-radius: 20px;
-    //     border: 2px solid blue;
-    //     margin-top: 20px;
-    //     transition: all 0.8s;
-    // }
-    // button:hover{
-    //     background-color: #fff;
-    //     color: blue;
-    // }
 }

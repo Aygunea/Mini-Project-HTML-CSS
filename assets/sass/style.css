@@ -65,6 +65,7 @@ table {
   padding: 17px 24px;
   color: #fff;
   text-transform: capitalize;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-weight: 600;
@@ -113,6 +114,10 @@ table {
   width: 80%;
 }
 
+.w-90 {
+  width: 90%;
+}
+
 section {
   overflow: hidden;
 }
@@ -134,6 +139,9 @@ section {
     width: 100%;
   }
   .w-35 {
+    width: 80%;
+  }
+  .w-90 {
     width: 100%;
   }
   .container-X {
@@ -145,13 +153,107 @@ section {
     padding-bottom: 2rem;
   }
 }
+header {
+  background-color: #263B5C;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 12px 40px;
+}
+header .slicknav-menu {
+  background-color: #4C4C4C;
+  padding: 30px 8px;
+  position: relative;
+  display: none;
+}
+header .slicknav-menu .slicknav-btn {
+  color: #fff;
+  padding: 6px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 5px;
+  background-color: #000;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+header .slicknav-menu .slicknav-btn i {
+  margin-left: 10px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav-phone {
+  font-weight: 500;
+}
+header nav .navbar {
+  gap: 20px;
+  position: relative;
+}
+header nav .navbar a {
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.6s;
+}
+header nav .navbar a:hover {
+  color: #65C9BB;
+}
+header nav .navbar .blog:hover .submenu {
+  opacity: 1;
+  top: 3.8rem;
+}
+header nav .navbar .submenu {
+  background-color: #fff;
+  padding: 15px 40px 15px 15px;
+  box-sizing: content-box;
+  opacity: 0;
+  position: absolute;
+  top: 5rem;
+  transition: all 0.4s;
+}
+header nav .navbar .submenu li {
+  line-height: 28px;
+}
+header nav .navbar .submenu a {
+  color: #263B5C;
+  font-size: 17px;
+  transition: all 0.6s;
+}
+header nav .navbar .submenu a:hover {
+  color: #65C9BB;
+}
+header p span {
+  border-bottom: 1px dashed #fff;
+}
+header .red-btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    display: none !important;
+  }
+  .slicknav-menu {
+    display: block !important;
+  }
+}
 footer {
   background-color: #263B5C;
   color: #fff;
 }
-footer a {
+footer img {
+  width: 150px;
+}
+footer p, footer a {
   color: #fff;
   font-weight: 500;
+  font-size: 12px;
 }
 footer ul {
   padding-left: 0;
@@ -159,8 +261,20 @@ footer ul {
 footer ul li {
   margin-bottom: 10px;
 }
-footer h4 {
+footer h6 {
   margin-bottom: 24px;
+}
+footer .footer-title {
+  font-size: 14px;
+  margin-bottom: 1.2rem;
+}
+footer .footer-copy-right span {
+  color: #65C9BB;
+}
+footer .btn-1 {
+  font-size: 12px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
 }
 footer .footer-social {
   display: flex;
@@ -169,9 +283,10 @@ footer .footer-social {
 }
 footer .footer-social a {
   display: inline-block;
-  width: 54px;
-  height: 54px;
-  line-height: 54px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 1rem;
   text-align: center;
   font-family: "Rubik", sans-serif;
 }
@@ -195,6 +310,7 @@ footer .footer-social .youtube {
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: center;
   color: #fff;
   background-image: url("/assets/images/h1_hero1.jpg.webp");
 }
@@ -213,11 +329,13 @@ footer .footer-social .youtube {
   line-height: 26px;
 }
 #home .hero-caption a {
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
 #about-area1 {
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -264,6 +382,7 @@ footer .footer-social .youtube {
 
 #services {
   width: 100%;
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   background-image: url("/assets/images/section-bg1.jpg.webp");
@@ -296,14 +415,8 @@ footer .footer-social .youtube {
   font-family: "Rubik", sans-serif;
 }
 
-#blog {
-  background-color: pink;
-  width: 100%;
-  height: 50vh;
-}
-
 @media screen and (max-width: 992px) {
   #home .hero-caption h1 {
-    font-size: 48px;
+    font-size: 42px;
   }
 }/*# sourceMappingURL=style.css.map */

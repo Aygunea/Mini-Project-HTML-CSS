@@ -3,6 +3,7 @@
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: center;
   color: $t-light;
   background-image: url("/assets/images/h1_hero1.jpg.webp");
 
@@ -114,14 +115,14 @@
 }
 // Start Section Blog
 #blog{
-  background-color: pink;
-  width: 100%;
-  height: 50vh;
+  // background-color: pink;
+  // width: 100%;
+  // height: 50vh;
 }
 @media screen and (max-width: 992px) {
   #home .hero-caption {
     h1 {
-      font-size: 48px;
+      font-size: 42px;
     }
   }
 }
