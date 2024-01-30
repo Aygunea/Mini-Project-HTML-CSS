@@ -1,3 +1,4 @@
+// Start Home
 #home {
   @include flex-center;
   width: 100%;
@@ -12,7 +13,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-
     h1 {
       font-size: 48px;
       font-weight: 900;
@@ -90,39 +90,79 @@
     text-align: center;
     font-family: $Rubik;
     .services-content {
-        h5{
-            margin: 1rem 0;
-            a{
-                color: $t-light;
-                font-size: 24px;
-                font-weight: 600;
-            }
+      h5 {
+        margin: 1rem 0;
+        a {
+          color: $t-light;
+          font-size: 24px;
+          font-weight: 600;
         }
-        p{
-            line-height: 30px;
-            font-weight: 500;
-        }
+      }
+      p {
+        line-height: 30px;
+        font-weight: 500;
+      }
     }
   }
   .section-title {
     h2 {
       font-size: 40px;
     }
-    p{
-        font-family: $Rubik;
+    p {
+      font-family: $Rubik;
     }
   }
 }
 // Start Section Blog
-#blog{
+#blog {
   // background-color: pink;
   // width: 100%;
   // height: 50vh;
 }
-@media screen and (max-width: 992px) {
+// Start Scroll Up
+.scrollUp{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: sticky;
+  top: 90%;
+  left: 95%;
+  background-color: $t-green;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 555;
+  a{
+    color: $t-light;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
   #home .hero-caption {
     h1 {
       font-size: 42px;
     }
   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
 }
