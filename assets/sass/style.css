@@ -65,6 +65,7 @@ table {
   padding: 17px 24px;
   color: #fff;
   text-transform: capitalize;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-weight: 600;
@@ -91,9 +92,20 @@ table {
   color: #fff;
 }
 
+.green-border-btn {
+  border: 1px solid #65C9BB;
+  color: #65C9BB;
+  background-color: #fff;
+}
+.green-border-btn:hover {
+  background-color: #65C9BB;
+  color: #fff;
+}
+
 .container-X {
   padding-left: 6rem;
   padding-right: 6rem;
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -153,6 +165,7 @@ table {
 header {
   background-color: #263b5c;
   color: #fff;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
   top: 0;
@@ -259,6 +272,9 @@ footer ul {
 footer ul li {
   margin-bottom: 10px;
 }
+footer ul li a:hover {
+  text-decoration: underline !important;
+}
 footer h6 {
   margin-bottom: 24px;
 }
@@ -279,6 +295,12 @@ footer .footer-social {
   gap: 10px;
   align-items: center;
 }
+footer .footer-social li {
+  transition: all 0.4s;
+}
+footer .footer-social li:hover i {
+  transform: rotateY(180deg);
+}
 footer .footer-social a {
   display: inline-block;
   width: 42px;
@@ -287,6 +309,9 @@ footer .footer-social a {
   font-size: 1rem;
   text-align: center;
   font-family: "Rubik", sans-serif;
+}
+footer .footer-social a i {
+  transition: all 0.6s;
 }
 footer .footer-social .fb {
   background-color: #3B5998;
@@ -327,11 +352,13 @@ footer .footer-social .youtube {
   line-height: 26px;
 }
 #home .hero-caption a {
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
 #about-area1 {
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -378,6 +405,7 @@ footer .footer-social .youtube {
 
 #services {
   width: 100%;
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   background-image: url("/assets/images/section-bg1.jpg.webp");
@@ -410,11 +438,18 @@ footer .footer-social .youtube {
   font-family: "Rubik", sans-serif;
 }
 
+#blog {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .scrollUp {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  position: sticky;
+  position: fixed;
   top: 90%;
   left: 95%;
   background-color: #65C9BB;
@@ -426,6 +461,34 @@ footer .footer-social .youtube {
 }
 .scrollUp a {
   color: #fff;
+}
+
+.mySwiper .card-body {
+  background-color: #F4F2F1;
+}
+.mySwiper .card-body h4 {
+  color: #263b5c;
+  font-weight: 600;
+}
+.mySwiper .card-body P {
+  font-weight: 500;
+}
+.mySwiper .browse-btn {
+  display: inline-block;
+  color: #F15B43;
+  border-bottom: 2px solid #F15B43;
+  padding-bottom: 10px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.mySwiper .browse-btn:hover {
+  letter-spacing: 1px;
+}
+
+.swiper-button-next {
+  right: 95% !important;
+  left: auto;
+  background-color: aqua;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -462,18 +525,45 @@ footer .footer-social .youtube {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
+}
+#blog-cards .card-body .blog-info-link {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#blog-cards .card-body .blog-info-link p:hover {
+  color: #65C9BB;
 }
 #blog-cards .card-body .card-title {
   font-size: 22px;
   font-weight: 600;
   color: #2c2c2c;
-  transition: all 0.3s;
 }
 #blog-cards .card-body .card-title:hover {
   color: #65C9BB;
 }
 #blog-cards .card-body p {
   color: #777777;
+}
+#blog-cards .card-body .date-btn {
+  background-color: #65C9BB;
+  border: 1px solid #65C9BB;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  width: 90px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 26px;
+  padding: 15px 20px;
+  position: absolute;
+  top: -70px;
+}
+#blog-cards .card-body .date-btn span {
+  font-weight: 100;
+  font-size: 18px;
 }
 #blog-cards .single-sidebar-widget {
   padding: 30px;
@@ -498,6 +588,7 @@ footer .footer-social .youtube {
   font-size: 12px;
   color: #f0e9ff;
   padding: 13px;
+  width: 70%;
 }
 #blog-cards .search-widget button {
   border: none;
@@ -506,6 +597,7 @@ footer .footer-social .youtube {
   font-weight: 500;
   font-size: 16px;
   padding: 13px 18px;
+  width: 30%;
 }
 #blog-cards .post-category-widget .category-list li {
   padding: 15px 0;
@@ -514,6 +606,10 @@ footer .footer-social .youtube {
 #blog-cards .post-category-widget .category-list li a {
   font-family: "Rubik", sans-serif;
   color: #777777;
+  transition: all 0.3s;
+}
+#blog-cards .post-category-widget .category-list li a:hover {
+  color: #65C9BB;
 }
 #blog-cards .media-post-item {
   display: flex;
@@ -527,6 +623,9 @@ footer .footer-social .youtube {
 #blog-cards .media-post-item .media-body a {
   color: #2c2c2c;
   font-weight: 600;
+}
+#blog-cards .media-post-item .media-body a:hover {
+  color: #65C9BB;
 }
 #blog-cards .media-post-item .media-body P {
   font-size: 14px;
@@ -552,12 +651,45 @@ footer .footer-social .youtube {
   padding: 6px 20px;
   display: inline-block;
   border: 1px solid #eeeeee;
+  transition: all 0.3s;
+}
+#blog-cards .links-widget .list a:hover {
+  background-color: #65C9BB;
+  color: #fff;
 }
 #blog-cards .feeds-widget .feeds-img {
+  row-gap: 20px;
+}
+#blog-cards .newsletter-widget .newsletter-input {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 15px;
+}
+#blog-cards .newsletter-widget .newsletter-input input {
+  border: 1px solid #f0e9ff;
+  font-size: 12px;
+  color: #f0e9ff;
+  padding: 13px;
+}
+#blog-cards .newsletter-widget .newsletter-input button {
+  width: 100%;
+}
+#blog-cards .blog-pagination ul {
+  display: flex;
+  justify-content: center;
   gap: 10px;
+}
+#blog-cards .blog-pagination li a {
+  display: inline-block;
+  color: #777777;
+  border: 1px solid #f0e9ff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+#blog-cards .blog-pagination li a:hover {
+  color: #65C9BB;
 }
 
 /* Extra small devices (phones, 600px and down) */
