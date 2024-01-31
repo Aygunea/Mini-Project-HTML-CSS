@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <title>Mini Project</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="navbar-brand">
+            <div class=" navbar-brand">
                 <img src="/assets/images/logo.png.webp" alt="">
             </div>
             <ul class="navbar mb-0">
@@ -68,7 +69,6 @@
                 </div>
             </div>
         </section>
-    
         <section id="about-area1" class="bg-section">
             <div class="container-X container-Y">
                 <div class="row">
@@ -221,65 +221,98 @@
         </section>
         <section id="blog">
             <div class="container-Y container-X">
-                <swiper-container class="mySwiper" slides-per-view="3" centered-slides="true" space-between="30"
-                    pagination="true" pagination-type="false" navigation="true">
-                    <swiper-slide>
-                        <div class="card border-0 rounded-0">
-                            <img src="./assets/images/blog1.jpg.webp" alt="">
-                            <div class="card-body p-4">
-                                <h4 class="card-title mb-3">Help the ecosystems</h4>
-                                <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis
-                                    aliquet pulvinar ante start in life and the opportunity to learn.
-                                </p>
-                                <div class="browse-btn">
-                                    Read More
+                <div class="row blog-row">
+                    <div class="col-md-3 col-sm-12">
+                        <p class="blog-title">News</p>
+                        <div class="blog-heading"> Latest blog</div>
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="home-demo">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card border-0 rounded-0">
+                                        <img src="./assets/images/blog1.jpg.webp" alt="">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title mb-3">Help the ecosystems</h4>
+                                            <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt
+                                                nunc
+                                                duis
+                                                aliquet pulvinar ante start in life and the opportunity to learn.
+                                            </p>
+                                            <div class="browse-btn">
+                                                Read More
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 rounded-0">
+                                        <img src="./assets/images/blog2.jpg.webp" alt="">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title mb-3">Help the ecosystems</h4>
+                                            <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt
+                                                nunc
+                                                duis
+                                                aliquet pulvinar ante start in life and the opportunity to learn.
+                                            </p>
+                                            <div class="browse-btn">
+                                                Read More
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 rounded-0">
+                                        <img src="./assets/images/blog1.jpg.webp" alt="">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title mb-3">Help the ecosystems</h4>
+                                            <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt
+                                                nunc
+                                                duis
+                                                aliquet pulvinar ante start in life and the opportunity to learn.
+                                            </p>
+                                            <div class="browse-btn">
+                                                Read More
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 rounded-0">
+                                        <img src="./assets/images/blog2.jpg.webp" alt="">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title mb-3">Help the ecosystems</h4>
+                                            <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt
+                                                nunc
+                                                duis
+                                                aliquet pulvinar ante start in life and the opportunity to learn.
+                                            </p>
+                                            <div class="browse-btn">
+                                                Read More
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card border-0 rounded-0">
+                                        <img src="./assets/images/blog1.jpg.webp" alt="">
+                                        <div class="card-body p-4">
+                                            <h4 class="card-title mb-3">Help the ecosystems</h4>
+                                            <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt
+                                                nunc
+                                                duis
+                                                aliquet pulvinar ante start in life and the opportunity to learn.
+                                            </p>
+                                            <div class="browse-btn">
+                                                Read More
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card border-0 rounded-0">
-                            <img src="./assets/images/blog2.jpg.webp" alt="">
-                            <div class="card-body p-4">
-                                <h4 class="card-title mb-3">Help the ecosystems</h4>
-                                <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis
-                                    aliquet pulvinar ante start in life and the opportunity to learn.
-                                </p>
-                                <div class="browse-btn">
-                                    Read More
-                                </div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card border-0 rounded-0">
-                            <img src="./assets/images/blog1.jpg.webp" alt="">
-                            <div class="card-body p-4">
-                                <h4 class="card-title mb-3">Help the ecosystems</h4>
-                                <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis
-                                    aliquet pulvinar ante start in life and the opportunity to learn.
-                                </p>
-                                <div class="browse-btn">
-                                    Read More
-                                </div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="card border-0 rounded-0">
-                            <img src="./assets/images/blog2.jpg.webp" alt="">
-                            <div class="card-body p-4">
-                                <h4 class="card-title mb-3">Help the ecosystems</h4>
-                                <p class="section-text">Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis
-                                    aliquet pulvinar ante start in life and the opportunity to learn.
-                                </p>
-                                <div class="browse-btn">
-                                    Read More
-                                </div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                </swiper-container>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="services" class="text-light">
@@ -409,8 +442,37 @@
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </div>
-    <script src="./assets/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        const nextIcon = '<i class="fa-solid fa-chevron-right"></i>';
+        const prevIcon = '<i class="fa-solid fa-chevron-left"></i>';
+        $(function () {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 3,
+                margin: 20,
+                nav: true,
+                loop: true,
+                autoPlay: true,
+                dots: false,
+                navText: [prevIcon, nextIcon],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    778: {
+                        items: 2,
+                        nav: true
+                    }
 
-
+                }
+            });
+        });
+    </script>
+    <script src="/assets/js/app.js"></script>
 </html>
