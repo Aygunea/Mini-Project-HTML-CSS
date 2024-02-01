@@ -27,7 +27,7 @@
 }
 
 // Start Section About Area 1
-#about-area1 {
+.about-area1 {
   height: max-content;
   .about-content {
     @include flex-center;
